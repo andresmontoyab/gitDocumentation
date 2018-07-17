@@ -1,4 +1,4 @@
-﻿#Github
+﻿# Github
 
 Git es una herramienta que nos permite una adecuada gestion de versionamiento.
 
@@ -19,6 +19,12 @@ todos los cambios generados se realizan localmente pueden persistirse en un comm
 
 Es como un area de carga donde se decide que va guardarse en el proximo commit y que se ignora,
 se puede usar para agregar cambios que ya estan listos para guardar.
+
+## Branch
+
+Son ramas que nos permiten trabajar en paralelo, se crean con base a otra rama, o por default a la rama
+principal que es "master".
+
 
 ## Comandos
 
@@ -45,6 +51,24 @@ se puede usar para agregar cambios que ya estan listos para guardar.
 	11. git checkout <number_commit> // Actualizamos nuestro repo local a una version anterior.
 	
 	12. git checkout master // Volver a la cabeza o ultimo commit.
+	
+	13. git branch <name_new_branch> // Crea una nueva rama con base en la rama master.
+	
+	14. git checkout <name_branch> // Cambia de rama
+	
+	15. git merge <branch_to_merge> // Comando usado par unir ramas, se unira la rama donde estoy parado con la rama especificada.
+	
+	16. git branch -d <branch_name> // Eliminar una rama.
+	
+	17. git clone <url> 	// Copia el repositorio central a un repositorio local.
+	
+	18. git pull			// Bajar cambios del repositorio central.
+	
+	19. git push 			// Subir cambios al repositorio central.
+	
+	20. git remote add origin <url> // Conectarse a un repositorio ya creado en github.
+	
+	
 ## Primer Commit
 
 1. git init

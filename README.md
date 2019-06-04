@@ -81,7 +81,7 @@ principal que es "master".
 	
 20. git remote add origin <url> // Conectarse a un repositorio ya creado en github.
 
-21. git rebase <brach_name> 	// Git se fija en las dos ramas, en la actual y en "brach_name", git checkea ambas ramas y se fija en el ultimo commit que ambas ramas tienen en comun y actualiza la rama actual con los commits pendientes de "brach_name".
+21. git rebase <brach_name> 	// Git se fija en las dos ramas, en la actual y en "brach_name", git checkea ambas ramas y se fija en el ultimo commit que ambas ramas tienen en comun y actualiza la rama actual con los commits pendientes de "brach_name". !! DO not rebase commit that exist outside your repository.
 	
 	
 ## Primer Commit

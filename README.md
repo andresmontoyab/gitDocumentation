@@ -2,6 +2,19 @@
 
 Git es una herramienta que nos permite una adecuada gestion de versionamiento.
 
+### Index
+
+* [Conceptos](#Conceptos)
+	* [Repositorio](#Repositorio)
+	* [Commit](#Commit)
+	* [Stagging](#Stagging)
+	* [Branch](#Branch)
+* [Comandos](#Comandos)
+* [Primer Commit](#Primer-Commit)
+* [Buenas Practicas](#Buenas-Practicas)
+
+# Conceptos
+
 ## Repositorio
 
 Es el directorio del proyecto donde estan todos los archivos y todas sus versiones historicas.
@@ -28,45 +41,47 @@ principal que es "master".
 
 ## Comandos
 
-	1. git init // Inicializar git en nuestro directorio.
+1. git init // Inicializar git en nuestro directorio.
 	
-	2. git status // Permite ver el estado de la copia local.
+2. git status // Permite ver el estado de la copia local.
 	
-	3. git add <name_archivo> // se agrega los archivos especificados a el area de staggin.
+3. git add <name_archivo> // se agrega los archivos especificados a el area de staggin.
 	
-	4. git commit -m "Message" // Realizar un commit. 
+4. git commit -m "Message" // Realizar un commit. 
 	
-	5. git log 		// Muestra la historia de comandos realizados
+5. git log 		// Muestra la historia de comandos realizados
 	
-	6. git log --oneline // mismo git log pero con diferente formato.
+6. git log --oneline // mismo git log pero con diferente formato.
 	
-	7. git log -p // Se muestra los diferentes commit realizados y con los cambios por archivo.
+7. git log -p // Se muestra los diferentes commit realizados y con los cambios por archivo.
 	
-	8. git log -- <name_file> // Se ven los commits que modificaron este archivo.
+8. git log -- <name_file> // Se ven los commits que modificaron este archivo.
 	
-	9. git diff 	// Nos muestra los cambios que tuvieron cada uno de los archivos.
+9. git diff 	// Nos muestra los cambios que tuvieron cada uno de los archivos.
 	
-	10. git checkout // Deshace los cambios para un archivo o si usamos . para todos los archivos modificados.
+10. git checkout // Deshace los cambios para un archivo o si usamos . para todos los archivos modificados.
 	
-	11. git checkout <number_commit> // Actualizamos nuestro repo local a una version anterior.
+11. git checkout <number_commit> // Actualizamos nuestro repo local a una version anterior.
 	
-	12. git checkout master // Volver a la cabeza o ultimo commit.
+12. git checkout master // Volver a la cabeza o ultimo commit.
 	
-	13. git branch <name_new_branch> // Crea una nueva rama con base en la rama master.
+13. git branch <name_new_branch> // Crea una nueva rama con base en la rama master.
 	
-	14. git checkout <name_branch> // Cambia de rama
+14. git checkout <name_branch> // Cambia de rama
 	
-	15. git merge <branch_to_merge> // Comando usado par unir ramas, se unira la rama donde estoy parado con la rama especificada.
+15. git merge <branch_to_merge> // Comando usado par unir ramas, se unira la rama donde estoy parado con la rama especificada, ademas git merge combina informacion de merges realizados en una sola accion.
 	
-	16. git branch -d <branch_name> // Eliminar una rama.
+16. git branch -d <branch_name> // Eliminar una rama.
 	
-	17. git clone <url> 	// Copia el repositorio central a un repositorio local.
+17. git clone <url> 	// Copia el repositorio central a un repositorio local.
 	
-	18. git pull			// Bajar cambios del repositorio central.
+18. git pull			// Bajar cambios del repositorio central.
 	
-	19. git push 			// Subir cambios al repositorio central.
+19. git push 			// Subir cambios al repositorio central.
 	
-	20. git remote add origin <url> // Conectarse a un repositorio ya creado en github.
+20. git remote add origin <url> // Conectarse a un repositorio ya creado en github.
+
+21. git rebase <brach_name> 	// Git se fija en las dos ramas, en la actual y en "brach_name", git checkea ambas ramas y se fija en el ultimo commit que ambas ramas tienen en comun y actualiza la rama actual con los commits pendientes de "brach_name".
 	
 	
 ## Primer Commit
@@ -80,5 +95,13 @@ principal que es "master".
 4. git remote add origin url
 
 5. git push -u origin master
+
+## Buenas Practicas
+
+1. Hacer commits Periodicos
+2. Son mas faciles de revertir.
+3. Son más faciles de hacer tracking sobre un cambio.
+4. Escribir buenas descripciones.
+
 
 
